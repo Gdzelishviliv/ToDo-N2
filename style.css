@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background:url(./photos/background.png);
+    width: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+.main-container{
+    padding-inline: 24px;
+}
+.header-name{
+    background: url(./photos/TODO\ mobile.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 110px;
+}
