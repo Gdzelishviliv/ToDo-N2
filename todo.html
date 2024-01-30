@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script defer src="./app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <header>
-            <div class="head">
-                <span class="header-name"></span>
-                <button class="daynight-btn"></button>
-            </div>
-        </header>
+      <header>
+        <div class="head">
+          <span class="header-name"></span>
+          <button class="daynight-btn"></button>
+        </div>
+      </header>
+      <div class="inp-card">
+        <input type="text" placeholder="Create a new todo…" />
+        <div class="todo-items">
+          <div class="item">
+            <button id="checkbox"></button>
+            <span>afaksfbgkasbf</span>
+            <button id="remove-btn"></button>
+          </div>
+          <div class="item">
+            <button id="checkbox"></button>
+            <span>afaksfbgkasbf</span>
+            <button id="remove-btn"></button>
+          </div>
+          <div class="item">
+            <button id="checkbox"></button>
+            <span>afaksfbgkasbf</span>
+            <button id="remove-btn"></button>
+          </div>
+          <div class="item">
+            <button id="checkbox"></button>
+            <span>afaksfbgkasbf</span>
+            <button id="remove-btn"></button>
+          </div>
+          <div class="item">
+            <button id="checkbox"></button>
+            <span>afaksfbgkasbf</span>
+            <button id="remove-btn"></button>
+          </div>
+          <div class="item-footer">
+            <span>5 items left</span>
+            <a href="#">Clear Completed</a>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <a href="#">All</a>
+        <a href="#">Active</a>
+        <a href="#">Completed</a>
+      </div>
+      <footer>
+        <div class="footer">
+          <span>Drag and drop to reorder list</span>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
