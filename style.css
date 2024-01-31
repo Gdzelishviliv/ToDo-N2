@@ -1,3 +1,6 @@
+html {
+  background: #fafafa;
+}
 * {
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
@@ -11,7 +14,6 @@ body {
   background-size: cover;
   height: 200px;
 }
-
 .head {
   display: flex;
   justify-content: space-between;
@@ -66,7 +68,7 @@ input:focus {
   font-weight: 400;
   letter-spacing: -0.194px;
   margin-top: 40px;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 .item {
   display: flex;
@@ -99,11 +101,12 @@ input:focus {
   height: 52px;
 }
 a,
-span {
+h5 {
   color: #9495a5;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: -0.167px;
+  margin: 0;
 }
 .features {
   display: flex;
@@ -113,12 +116,52 @@ span {
   height: 48px;
   box-shadow: 0px 35px 50px 150px rgba(194, 195, 214, 0.5);
 }
-.features a{
-  color: #9495A5;
+.features a {
+  color: #9495a5;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.194px;
 }
-.features a:hover{
-  color: #3A7CFD;
+.features a:hover {
+  color: #3a7cfd;
+}
+#checkbox {
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+.dark-theme-variables .daynight-btn {
+  background: url(./photos/day\ icn.svg);
+}
+.dark-theme-variables {
+  background: url(./photos/backgr-night.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark-theme-variables .inp-card input,
+.dark-theme-variables .todo-items,
+.dark-theme-variables .features {
+  background: #25273d;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+.dark-theme-variables .item{
+  border-bottom:1px solid #393A4B;
+}
+.dark-theme-variables span{
+  color: #C8CBE7;
+}
+.dark-theme-variables a,
+.dark-theme-variables h5{
+  color: #5B5E7E;
+}
+.dark-theme-variables .inp-card input{
+  background: url(./photos/inp-circle-night.svg),#25273D;
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.dark-theme-variables .footer span{
+  color: #5B5E7E;
+}
+.dark-theme-variables html{
+  background: #171823;
 }
