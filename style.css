@@ -36,7 +36,7 @@ body {
   display: grid;
   padding-top: 40px;
 }
-.inp-card input {
+#inp {
   height: 48px;
   border-radius: 5px;
   border: 0px;
@@ -95,6 +95,7 @@ input:focus {
   align-items: center;
   padding-inline: 20px;
   height: 52px;
+  background: #fff;
 }
 a,
 h5 {
@@ -161,6 +162,16 @@ h5 {
 .dark-theme-variables .main {
   background: blue;
 }
-.dark-theme-variables{
-  background-color:#171823;;
+.dark-theme-variables {
+  background-color: #171823;
+}
+.dark-theme-variables .item-footer {
+  background: #25273d;
+}
+.dark-theme-variables .inp-card > input {
+  color: #c8cbe7;
+}
+.item.completed span {
+  text-decoration: line-through;
+  color: #d1d2da;
 }
