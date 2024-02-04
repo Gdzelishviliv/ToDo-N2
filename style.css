@@ -75,12 +75,30 @@ input:focus {
   padding-inline: 20px;
 }
 .todo-items,
-.features {
+.features,
+.features-desctop {
   margin-top: 16px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
 }
+.todo-items {
+  overflow-y: scroll;
+  height: 440px;
+}
+
+.todo-items::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.todo-items::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.todo-items::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 #remove-btn {
   background: url(./photos/removebtn-icn.svg);
   background-repeat: no-repeat;
@@ -113,13 +131,18 @@ h5 {
   height: 48px;
   box-shadow: 0px 35px 50px 150px rgba(194, 195, 214, 0.5);
 }
-.features a {
+.features-desctop {
+  display: none;
+}
+.features a,
+.features-desctop a {
   color: #9495a5;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.194px;
 }
-.features a:hover {
+.features a:hover,
+.features-desctop a:hover {
   color: #3a7cfd;
 }
 #checkbox {
@@ -141,6 +164,9 @@ h5 {
   background: #25273d;
   box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
 }
+.dark-theme-variables .features-desctop {
+  background: #25273d;
+}
 .dark-theme-variables .item {
   border-bottom: 1px solid #393a4b;
 }
@@ -151,10 +177,11 @@ h5 {
 .dark-theme-variables h5 {
   color: #5b5e7e;
 }
-.dark-theme-variables .inp-card input {
+.dark-theme-variables #inp {
   background: url(./photos/inp-circle-night.svg), #25273d;
   background-repeat: no-repeat;
   background-position: 20px;
+  color: #c8cbe7;
 }
 .dark-theme-variables .footer span {
   color: #5b5e7e;
@@ -168,10 +195,38 @@ h5 {
 .dark-theme-variables .item-footer {
   background: #25273d;
 }
-.dark-theme-variables .inp-card > input {
-  color: #c8cbe7;
-}
 .item.completed span {
   text-decoration: line-through;
   color: #d1d2da;
+}
+@media screen and (min-width: 990px) {
+  .head,
+  #inp,
+  .inp-card {
+    max-width: 540px;
+    margin: auto;
+  }
+  .inp-card {
+    display: inherit;
+  }
+  #inp {
+    width: 100%;
+  }
+  .features {
+    display: none;
+  }
+  .features-desctop {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+  }
+  .dark-theme-variables #inp {
+    background: url(./photos/inp-circle-night.svg), #25273d;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    color: #c8cbe7;
+    box-shadow: none;
+  }
 }
