@@ -50,15 +50,18 @@ function updateItemsLeftCount() {
     itemsLeftCount !== 1 ? "s" : ""
   } left`;
 }
-const clearCompletedLink = document.querySelector('#clear');
+const clearCompletedLink = document.querySelector("#clear");
 function updateClearCompletedVisibility() {
-  const completedItemsCount = document.querySelectorAll(".item.completed").length;
+  const completedItemsCount =
+    document.querySelectorAll(".item.completed").length;
   clearCompletedLink.style.display = completedItemsCount > 0 ? "block" : "none";
 }
 
 clearCompletedLink.addEventListener("click", function () {
-  document.querySelectorAll(".item.completed").forEach(function (completedItem) {
-    completedItem.remove();
-  });
+  document
+    .querySelectorAll(".item.completed")
+    .forEach(function (completedItem) {
+      completedItem.remove();
+    });
   updateItemsLeftCount();
 });
