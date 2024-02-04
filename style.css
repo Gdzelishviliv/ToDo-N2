@@ -84,7 +84,7 @@ input:focus {
 }
 .todo-items {
   overflow-y: scroll;
-  height: 440px;
+  height: 340px;
 }
 
 .todo-items::-webkit-scrollbar {
@@ -228,5 +228,8 @@ h5 {
     background-position: 20px;
     color: #c8cbe7;
     box-shadow: none;
+  }
+  .item{
+    height: 64px;
   }
 }
