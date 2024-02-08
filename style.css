@@ -199,6 +199,25 @@ h5 {
   text-decoration: line-through;
   color: #d1d2da;
 }
+.item input {
+  border: 1px solid #e3e4f1;
+  background: transparent;
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.item input:hover {
+  background: url(./photos/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item.completed input{
+  background: url(./photos/checkbox-checked.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 990px) {
   .head,
   #inp,

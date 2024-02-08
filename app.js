@@ -17,20 +17,20 @@ function addTodoItem(todoText) {
   const todoItem = document.createElement("div");
   todoItem.classList.add("item");
   todoItem.innerHTML = `
-  <input type="checkbox" name="checkbox">
+  <input type="button"">
   <span id="heading">${todoText}</span>
   <button id="remove-btn"></button>
   `;
 
   const checkbox = todoItem.querySelector("input");
   const removeButton = todoItem.querySelector("#remove-btn");
-  checkbox.addEventListener("change", function () {
+  checkbox.addEventListener("click", function () {
     todoItem.classList.toggle("completed");
     updateItemsLeftCount();
   });
 
   removeButton.addEventListener("click", function () {
-    if (checkbox.checked) {
+    if (todoItem.classList.contains("completed")) {
       todoItem.remove();
     } else {
       return 0;
